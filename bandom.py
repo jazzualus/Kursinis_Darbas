@@ -93,7 +93,7 @@ def be_paveiksliuku():
             knopkes[numeris].grid(row=i, column=y)
 
 #praejus nustatytam laikui nuo programos paleidimo mygtuku paveiksliukai pakeiciami tusciais mygtukais
-root.after(5000, be_paveiksliuku)
+root.after(3500, be_paveiksliuku)
 
 
 #skaiciuojam paspaudimus
