@@ -83,14 +83,13 @@ for i in range(4):
         knopkes[numeris].grid(row=i, column=y)
     print(knopkes)
 
-#funkcija sukuria mygtukus be paveiksliuku
+#funkcija sukuria mygtukus su klaustukais vietoj paveiksliuku
 def be_paveiksliuku():
     numeris = -1
-    for i in range(4):
-        for y in range(4):
+    for i in range(16):
             numeris +=1
             knopkes[numeris].configure(image=klaustukas, command=lambda x=numeris: atverti_paveiksliuka(x)) #perduoda kitai funkcijai kuris mygtukas paspaustas
-            knopkes[numeris].grid(row=i, column=y)
+
 
 #praejus nustatytam laikui nuo programos paleidimo mygtuku paveiksliukai pakeiciami tusciais mygtukais
 root.after(3500, be_paveiksliuku)
