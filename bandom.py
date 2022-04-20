@@ -11,6 +11,8 @@ root = Tk()
 root.eval('tk::PlaceWindow . center')
 root.title('Atmintis')
 root.geometry("422x422")
+root.resizable(False, False)
+
 meniu = Menu(root)
 root.config(menu=meniu)
 submeniu = Menu(meniu, tearoff = 0)
@@ -81,7 +83,7 @@ for i in range(4):
         knopkes.append(Button(root, image=z, ))
         img.remove(z)
         knopkes[numeris].grid(row=i, column=y)
-    print(knopkes)
+#    print(knopkes)
 
 #funkcija sukuria mygtukus su klaustukais vietoj paveiksliuku
 def be_paveiksliuku():
